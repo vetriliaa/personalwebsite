@@ -84,12 +84,7 @@
 }
 
 .project-item a {
-  text-decoration: none;
   text-decoration: underline;
   color: black;
 }
 
-.project-item a:hover {
-  text-decoration: underline;
-  margin-left: 4cm;
-}

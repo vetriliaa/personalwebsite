@@ -8,6 +8,32 @@ import githubIcon from '../assets/github.png';
 import goodreadsIcon from '../assets/goodreads.png';
 
 function Profile() {
+  const handleCalendlyClick = (e) => {
+    e.preventDefault();
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: 'https://calendly.com/vetriliaa/30min' });
+    }
+    return false;
+  };
+
+  // Load Calendly script and styles
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    const link = document.createElement('link');
+    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+
+    return () => {
+      document.body.removeChild(script);
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
     <div className="profile-container">
       <img src={profilePic} alt="Profile" className="profile-pic" />
@@ -41,6 +67,12 @@ function Profile() {
           where I recently graduated with a double major in Computer Science and Economics. I’m experienced 
           in both front-end and back-end development and love building technical solutions for challenging problems. 
           In my free time I love reading, working out and going on hikes!
+        </div>
+
+        <div className="calendly-link">
+          <a href="#" onClick={handleCalendlyClick} style={{ textDecoration: 'none', color: 'inherit' }}>
+            15 min coffee chat! ☕️
+          </a>
         </div>
       </div>
     </div>

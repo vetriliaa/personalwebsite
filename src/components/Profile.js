@@ -64,9 +64,9 @@ function Profile() {
 
         <div className="bio">
           I’m the current Texas Instruments Leadership Fellow at the University of Texas at Dallas, 
-          where I recently graduated with a double major in Computer Science and Economics. I’m experienced 
-          in both front-end and back-end development and love building technical solutions for challenging problems. 
-          In my free time I love reading, working out and going on hikes!
+          where I recently graduated with a double major in Computer Science and Economics. I'm passionate about 
+          building scalable systems and AI-powered solutions that create real-world impact. In my free time I love 
+          reading, working out and going on hikes!
         </div>
 
         <div className="calendly-link">

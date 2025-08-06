@@ -4,6 +4,11 @@ import '../styles.css'; // Use your main CSS if needed
 function Projects() {
   const projects = [
     {
+      name: 'Weather Genie',
+      link: 'https://weather-genie-8ruosbxjo-vetriliaas-projects.vercel.app/',
+      description: "A real-time weather application interface"
+    },
+    {
       name: 'College Compass',
       link: 'https://collegecompass2024.netlify.app/',
       description: "A web app to centralize resources (e.g., transit, grocery) for new international students at UT Dallas"

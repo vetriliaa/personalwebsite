@@ -63,11 +63,6 @@ function Projects() {
 
   return (
     <div className="projects-container">
-      <h1 className="resume-heading">
-        <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">
-          RESUME
-        </a>
-      </h1>
 
       <h2 className="projects-heading">Projects</h2>
 

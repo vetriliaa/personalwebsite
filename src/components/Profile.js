@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles.css';
 import profilePic from '../assets/profile.png';
+import locationIcon from '../assets/location.png';
 import linkedinIcon from '../assets/linkedin.png';
 import gmailIcon from '../assets/gmail.png';
 import githubIcon from '../assets/github.png';
@@ -12,6 +13,14 @@ function Profile() {
       <img src={profilePic} alt="Profile" className="profile-pic" />
 
       <div className="profile-info">
+        <p className="location">
+          <img src={locationIcon} alt="Location" className="icon" /> <strong>Seattle, WA</strong>
+        </p>
+        <p>
+          Computer Science, BS'25 <br/>
+          Economics, BA'25
+        </p>
+
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/liaa-kumar/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="LinkedIn" className="icon" />
